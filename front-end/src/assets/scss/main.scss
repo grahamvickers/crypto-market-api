@@ -1,0 +1,98 @@
+// color variables below
+$white: #fff;
+$off-white: #FCFBFE;
+$black: #313131;
+$blue: #3861FC;
+
+// font settings below 
+h2{
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: $black;
+}
+
+p{
+    font-family: futura-pt, sans-serif;
+    font-weight: 300;
+    font-size: 16px; 
+    color: $black;
+}
+// general container customizations below
+
+body{
+    background-color: $off-white;
+}
+
+main{
+    // height: 70vh;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 30px;
+    padding: 30px;
+    background-color: $white;
+    box-shadow: 0 4px 20px #f8f8f841;
+    img:hover{
+        cursor: pointer;
+    }
+}
+
+footer{
+    text-align: center;
+    padding: 30px;
+    background-color: $white;
+    box-shadow: 0 -4px 20px #f8f8f841;
+}
+
+.hidden{
+    display: none;
+}
+
+// custom components below 
+
+table{
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: left;
+    padding: 25px;
+    thead{
+        font-family: futura-pt, sans-serif;
+        font-weight: 200;
+        font-size: 16px; 
+        color: $blue;
+        padding: 20px !important;
+    }
+}
+
+#table{
+    background-color: $white;
+}
+.listItem{
+    padding: 25px;
+    margin-bottom: 25px !important;
+    text-align: left;
+    font-family: futura-pt, sans-serif;
+    font-weight: 200;
+    font-size: 16px; 
+    padding: 25px !important;
+    height: 60px;
+    img{
+        padding-right: 15px;
+    }
+}
+
+.coinLogo{
+    width: 25px;
+    height: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
