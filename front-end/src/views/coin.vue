@@ -1,15 +1,20 @@
 <template>
   <main>
     <p><a href="/">Cryptocurrencies</a> / {{coin.name}}</p>
-    <h2>{{coin.name}}</h2>
+    <div>
+      <img :src="`${coin.image.small}`" alt="Currency logo">
+      <h2>{{coin.name}}</h2>  
+    </div>
+    
+    <p><span v-html="coin.description.en"></span></p>
   </main>
 </template>
 
 <script>
-export default {
-  data() {
+  export default {
+    data() {
       return {
-        coin: {}
+        coin: {},
       }
     },
     created() {
@@ -24,5 +29,5 @@ export default {
         vm.coin = data;
       })
     }
-}
+  }
 </script>
