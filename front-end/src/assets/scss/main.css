@@ -33,6 +33,20 @@ p {
   color: #313131;
 }
 
+#homeBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  border: none;
+  padding: 10px 80px;
+  background-color: #3861FC;
+  font-family: futura-pt, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #FCFBFE;
+}
+
 body {
   margin: 0 auto;
   background-color: #FCFBFE;
@@ -78,6 +92,19 @@ footer {
   display: none;
 }
 
+.webOnly {
+  display: none;
+}
+
+#landing h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#landing p {
+  margin-bottom: 20px;
+}
+
 table {
   width: 100%;
   margin-bottom: 40px;
@@ -86,11 +113,29 @@ table {
 }
 
 table thead {
-  font-family: futura-pt, sans-serif;
-  font-weight: 200;
+  font-family: futura-pt-bold, sans-serif;
+  font-weight: 700;
   font-size: 16px;
   color: #3861FC;
-  padding: 20px !important;
+}
+
+table thead th {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+table thead th:first-child {
+  padding-left: 15px;
+}
+
+table tbody td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  vertical-align: middle;
+}
+
+table tbody td:first-child {
+  padding-left: 30px;
 }
 
 #table {
@@ -101,14 +146,19 @@ table thead {
 }
 
 .listItem {
-  padding: 25px;
-  margin-bottom: 25px !important;
   text-align: left;
   font-family: futura-pt, sans-serif;
   font-weight: 200;
   font-size: 16px;
-  padding: 25px !important;
   height: 60px;
+}
+
+.listItem:nth-child(odd) {
+  background-color: #FCFBFE;
+}
+
+.listItem:hover {
+  background-color: #3862fc0d;
 }
 
 .listItem img {
@@ -119,14 +169,6 @@ table thead {
   color: #3861FC;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
-}
-
-.listItem td:first-child {
-  padding-left: 20px;
-}
-
-.listItem:nth-child(odd) {
-  background-color: #FCFBFE;
 }
 
 .coinLogo {
@@ -233,6 +275,9 @@ a {
   }
   .listItem {
     font-size: 18px;
+  }
+  .webOnly {
+    display: contents;
   }
 }
 

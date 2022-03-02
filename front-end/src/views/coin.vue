@@ -65,7 +65,7 @@
       </div>
     </section>
     <p id="coinDescription"><span v-html="coin.description.en"></span></p>
-    <button><router-link :to="`/`">VIEW ALL COINS</router-link></button>
+    <button id="homeBtn"><router-link :to="`/`">VIEW ALL COINS</router-link></button>
   </main>
 </template>
 
