@@ -20,7 +20,7 @@ export default {
     })
     .then(function(data){
       console.log(data);
-      vm.news = data[Math.floor(Math.random()*10)].description
+      // vm.news = data[Math.floor(Math.random()*10)].description
 
     })
   }

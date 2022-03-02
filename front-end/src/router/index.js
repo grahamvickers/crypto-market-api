@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import CoinsList from '../views/coins-list.vue'
+import CoinList from '../views/coin-list.vue'
 import Coin from '../views/coin.vue'
 
 Vue.use(VueRouter)
@@ -12,7 +12,7 @@ const routes = [
   },
   {
     path: '/cryptocurrencies',
-    component: CoinsList
+    component: CoinList
   },
   {
     path: '/cryptocurrencies/:id',
