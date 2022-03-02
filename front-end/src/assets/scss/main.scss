@@ -12,6 +12,27 @@ h2{
     color: $black;
 }
 
+h3{
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: $blue;
+}
+
+h4{
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: $black;
+}
+
+h5{
+    font-family: futura-pt, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: $black;
+}
+
 p{
     font-family: futura-pt, sans-serif;
     font-weight: 300;
@@ -21,12 +42,14 @@ p{
 // general container customizations below
 
 body{
+    margin: 0 auto;
     background-color: $off-white;
+    max-width: 100vw;
 }
 
 main{
     // height: 70vh;
-    padding: 30px;
+    padding: 30px 30px 30px 30px;
     margin-bottom: 40px;
 }
 
@@ -45,7 +68,7 @@ header{
 
 footer{
     text-align: center;
-    padding: 30px;
+    padding: 40px;
     background-color: $white;
     box-shadow: 0 -4px 20px #f8f8f841;
 }
@@ -122,6 +145,7 @@ a{
     display: flex;
     flex-direction: row; 
     align-items: center;
+    margin-top: 20px;
     img{
         padding-right: 20px;
         height: auto;
@@ -130,6 +154,53 @@ a{
     }
 }
 
+#coinPrice{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#currentPrice{
+    margin-right: 20px;
+}
+
+
+
+#coinInfo{
+    margin-bottom: 40px;
+    margin: 0 auto;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        li{
+            width: 300px;
+            margin: 20px;
+
+            h3, h4{
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+.coinInfoCon{
+    padding: 30px;
+    background-color: $white;
+    box-shadow: 0px 0px 20px #cecece3f;
+    margin-bottom: 30px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#coinDescription{
+    line-height: 24px;
+    padding: 30px;
+}
 
 @media screen and (min-width: 760px) {
     #coinHead{
@@ -139,6 +210,25 @@ a{
     }
     .listItem{
         font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    #coinInfo{
+        margin-bottom: 40px;
+        margin: 0 auto;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            li{
+                width: 300px;
+                margin: 30px;
+                h3, h4{
+                    margin-bottom: 15px;
+                }
+            }
+        }
     }
 }
 
@@ -154,5 +244,14 @@ a{
     }
     .listItem{
         font-size: 20px;
+    }
+
+    #coinInfo{
+        ul{
+            li{
+                width: 300px;
+                margin: 10px;
+            }
+        }
     }
 }

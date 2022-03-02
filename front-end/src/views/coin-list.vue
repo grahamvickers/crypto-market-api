@@ -2,7 +2,7 @@
 <main>
     <h1 class="hidden">Welcome to the Meta World, find all the latest market changes and news stories!</h1>
     <h2>Watch the top 25 Cryptocurrencies value change in real time!</h2>
-    <p>Cryptocurrencies /</p>
+    <p>Cryptocurrencies / CAD</p>
 
     <section>
         <h3 class="hidden">Live Crypto Market</h3>
@@ -11,7 +11,7 @@
                 <thead>
                     <th>Rank ▴</th>
                     <th>Name</th>
-                    <th>Price - CAD</th>
+                    <th>Price</th>
                 </thead>
                 <tbody>
                     <tr v-for="coin in coins" v-bind:key="coin" class="listItem">
