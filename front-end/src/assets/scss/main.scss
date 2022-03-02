@@ -39,6 +39,19 @@ p{
     font-size: 16px; 
     color: $black;
 }
+
+#homeBtn{
+    display: flex;
+    margin: 0 auto;
+    border: none;
+    padding: 10px 80px;
+    background-color: $blue;
+    font-family: futura-pt, sans-serif;
+    font-weight: 300;
+    font-size: 16px; 
+    color: $off-white;
+    
+}
 // general container customizations below
 
 body{
@@ -77,7 +90,20 @@ footer{
     display: none;
 }
 
+.webOnly{
+    display: none;
+}
+
 // custom components below 
+#landing{
+    h2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    p{
+        margin-bottom: 20px;
+    }
+}
 
 table{
     width: 100%;
@@ -85,12 +111,28 @@ table{
     text-align: left;
     padding: 25px;
     thead{
-        font-family: futura-pt, sans-serif;
-        font-weight: 200;
+        font-family: futura-pt-bold, sans-serif;
+        font-weight: 700;
         font-size: 16px; 
         color: $blue;
-        padding: 20px !important;
-        
+        th{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            &:first-child{
+                padding-left: 15px;
+            }
+        }
+    }
+    tbody{
+        td{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            vertical-align: middle;
+        }
+        td:first-child{
+            padding-left: 30px;
+    
+        }
     }
 }
 
@@ -102,15 +144,17 @@ table{
 
 }
 .listItem{
-    padding: 25px;
-    margin-bottom: 25px !important;
     text-align: left;
     font-family: futura-pt, sans-serif;
     font-weight: 200;
     font-size: 16px; 
-    padding: 25px !important;
     height: 60px;
-   
+    &:nth-child(odd){
+        background-color: #FCFBFE;
+    }
+    &:hover{
+        background-color: #3862fc0d;
+    }
     img{
         padding-right: 15px;
     }
@@ -118,13 +162,8 @@ table{
         color: $blue;
         transition: .3s ease-in-out;
     }
-    td:first-child{
-        padding-left: 20px;
-
-    }
-    &:nth-child(odd){
-        background-color: #FCFBFE;
-    }
+    
+   
 }
 
 
@@ -211,6 +250,9 @@ a{
     .listItem{
         font-size: 18px;
     }
+    .webOnly{
+        display: contents;
+    }
 }
 
 @media screen and (min-width: 980px) {
@@ -233,6 +275,7 @@ a{
 }
 
 @media screen and (min-width: 1200px) {
+    
     main{
         max-width: 1400px;
         margin: 0 auto;
