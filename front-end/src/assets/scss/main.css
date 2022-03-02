@@ -72,6 +72,9 @@ table thead {
 
 #table {
   background-color: #fff;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 20px #cecece3f;
+          box-shadow: 0px 0px 20px #cecece3f;
 }
 
 .listItem {
@@ -89,6 +92,20 @@ table thead {
   padding-right: 15px;
 }
 
+.listItem .coinHover:hover {
+  color: #3861FC;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.listItem td:first-child {
+  padding-left: 20px;
+}
+
+.listItem:nth-child(odd) {
+  background-color: #FCFBFE;
+}
+
 .coinLogo {
   width: 25px;
   height: 25px;
@@ -97,5 +114,47 @@ table thead {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+#coinHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#coinHead img {
+  padding-right: 20px;
+  height: auto;
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (min-width: 760px) {
+  #coinHead h2 {
+    font-size: 36px !important;
+  }
+  .listItem {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  #coinHead h2 {
+    font-size: 42px !important;
+  }
+  .listItem {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
